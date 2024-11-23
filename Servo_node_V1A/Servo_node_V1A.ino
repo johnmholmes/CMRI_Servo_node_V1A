@@ -114,7 +114,7 @@ void handlePositionAdjustments() {
   int tempPosition = turnout.position;
 
   // Adjust the closed position
-  if (adjustClosedUp && turnout.closedPos < 140) {
+  if (adjustClosedUp && turnout.closedPos < 130) {
     turnout.closedPos++;
     EEPROM.write(EEPROM_CLOSED_POS_ADDR, turnout.closedPos);
     Serial.print("Adjusted Closed Position: ");
@@ -130,7 +130,7 @@ void handlePositionAdjustments() {
   }
 
   // Adjust the thrown position
-  if (adjustThrownUp && turnout.thrownPos < 140) {
+  if (adjustThrownUp && turnout.thrownPos < 130) {
     turnout.thrownPos++;
     EEPROM.write(EEPROM_THROWN_POS_ADDR, turnout.thrownPos);
     Serial.print("Adjusted Thrown Position: ");

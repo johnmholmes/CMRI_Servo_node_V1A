@@ -57,9 +57,9 @@ void setup() {
   if (turnout.closedPos == 255) turnout.closedPos = 85; // Default closed position
   if (turnout.thrownPos == 255) turnout.thrownPos = 95; // Default thrown position
 
-  // Constrain to valid range (60 to 140)
-  turnout.closedPos = constrain(turnout.closedPos, 60, 140);
-  turnout.thrownPos = constrain(turnout.thrownPos, 60, 140);
+  // Constrain to valid range (60 to 130)
+  turnout.closedPos = constrain(turnout.closedPos, 60, 130);
+  turnout.thrownPos = constrain(turnout.thrownPos, 60, 130);
 
   // Initialize the speed for the turnout movement
   turnout.speed = 10; // Default speed in milliseconds

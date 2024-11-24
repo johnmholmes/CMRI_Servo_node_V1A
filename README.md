@@ -8,3 +8,5 @@ On the first installation, the system is pre-configured with a midpoint value of
 To ensure your customized settings are retained, the system uses EEPROM to store the adjusted position values. This means your configuration will persist even after a power cycle or restart.
 
 To fine-tune the servo's behavior for your specific needs, you can use JMRI to modify these stored values. This approach simplifies setup and ensures the servo operates precisely as needed without manual hardware adjustments.
+
+### See Wiki for more details
